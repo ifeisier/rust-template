@@ -1,0 +1,24 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+authors = ["ifeisier <ifeisier@hotmail.com>"]
+description = "{{project_description}}"
+repository = "https://github.com/ifeisier/{{project-name}}"
+license-file = "LICENSE"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = "fat"
+
+
+[dependencies]
+rust_utils = { git = "https://github.com/ifeisier/rust_utils", branch = "main" }
+anyhow = "1.0.83"
+thiserror = "1.0.61"
+crossbeam-channel = "0.5.13"
+rust_decimal = "1.35.0"
+lazy_static = "1.4.0"
+tokio = { version = "1.38.0", features = ["rt", "rt-multi-thread", "net", "time", "sync"] }
