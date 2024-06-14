@@ -1,0 +1,6 @@
+[template]
+name = "ifeisier-rust-template"
+description = "个人使用的 Rust 项目模板"
+
+[placeholders]
+project_description = { type = "string", prompt = "Project Description" }
