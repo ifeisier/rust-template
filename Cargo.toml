@@ -1,3 +1,5 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [package]
 name = "{{project-name}}"
 version = "0.1.0"
@@ -8,8 +10,6 @@ repository = "https://github.com/ifeisier/{{project-name}}"
 license-file = "LICENSE"
 
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [profile.release]
 lto = "fat"
 
@@ -19,6 +19,7 @@ rust_utils = { git = "https://github.com/ifeisier/rust_utils", branch = "main", 
 anyhow = "1.0.86"
 thiserror = "1.0.61"
 crossbeam-channel = "0.5.13"
+chrono = "0.4.38"
 rust_decimal = "1.35.0"
 lazy_static = "1.4.0"
 tokio = { version = "1.38.0", default-features = false, features = ["rt", "rt-multi-thread", "net", "time", "sync"] }
