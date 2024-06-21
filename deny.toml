@@ -15,9 +15,9 @@ ignore = [
 [bans]
 # 使用 -g <dir> 选项将打印出每个版本的 dotgraph.
 highlight = "all"
-#multiple-versions = "warn"
-multiple-versions = "allow"
 wildcards = "deny"
+multiple-versions = "allow"
+#multiple-versions = "warn"
 
 
 # 关于 licenses 部分的更多文档可以在这里找到:
