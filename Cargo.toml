@@ -25,3 +25,9 @@ rust_decimal = "1.35.0"
 lazy_static = "1.4.0"
 tokio = { version = "1.38.0", default-features = false, features = ["rt", "rt-multi-thread", "net", "time", "sync"] }
 futures = "0.3.30"
+
+
+[dependencies.sqlx]
+version = "0.7.4"
+default-features = false
+features = ["runtime-tokio", "mysql", "rust_decimal", "macros", "json", "chrono"]
